@@ -14,6 +14,7 @@ export default function SpotifyTrack({
     return (
         <Link
             href={'https://open.spotify.com/track/' + track_id}
+            target="_blank"
             className="flex items-center gap-2 active:scale-[.97]"
         >
             <img

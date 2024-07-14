@@ -5,7 +5,7 @@ import Icon from '../ui/icon'
 
 export default function Navbar() {
     return (
-        <div className="py-6 flex gap-2 justify-end items-center">
+        <div className="pb-6 flex gap-2 justify-end items-center">
             <Clock />
             <button
                 onClick={() => null}

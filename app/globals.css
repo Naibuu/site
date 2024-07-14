@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply max-w-page mx-auto px-6 bg-[#0F0F11] text-neutral-200;
+        @apply max-w-page mx-auto px-6 py-12 bg-[#0F0F11] text-neutral-200;
     }
 
     ::selection {
