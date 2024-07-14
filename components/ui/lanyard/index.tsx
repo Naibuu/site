@@ -14,7 +14,7 @@ export default function Lanyard() {
     }
 
     return (
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between max-xs:flex-col max-xs:items-start max-xs:gap-2">
             <div className="flex items-center gap-3">
                 <img
                     src="https://avatars.githubusercontent.com/u/81579850?s=64"
@@ -33,7 +33,7 @@ export default function Lanyard() {
             </div>
 
             {data.data.spotify && (
-                <div className="p-2 border border-neutral-800 rounded-lg transition hover:bg-neutral-900">
+                <div className="p-2 border border-neutral-800 rounded-lg transition hover:bg-neutral-900 max-xs:p-0 max-xs:border-none">
                     <SpotifyTrack {...data.data.spotify} />
                 </div>
             )}

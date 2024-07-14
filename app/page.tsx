@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex flex-col gap-8">
             <Lanyard />
 
-            <div className="flex flex-col gap-3 text-justify leading-8 text-sm text-neutral-300 font-medium">
+            <div className="flex flex-col gap-3 text-justify leading-8 text-sm text-neutral-300 font-medium max-xs:text-left">
                 <p>
                     My name is Alex. I'm a self-taught programmer and freelance
                     worker from Greece, specializing in frontend development and
@@ -17,8 +17,8 @@ export default function Home() {
                 <p>
                     The first lines of code I ever wrote were for a simple
                     Discord bot I made using Python. This experience led me to
-                    create other fun projects, like Minecraft mods and clients,
-                    which really helped me understand how code works.
+                    create other silly projects, like Minecraft mods and
+                    clients, which really helped me understand how code works.
                 </p>
                 <p>
                     In 2021, I began making websites and haven't stopped since.

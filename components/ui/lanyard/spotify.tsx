@@ -18,7 +18,7 @@ export default function SpotifyTrack({
         >
             <img
                 src={album_art_url}
-                className="size-10 rounded shadow select-none"
+                className="size-10 rounded shadow select-none max-xs:size-8"
                 draggable={false}
                 alt={album}
             />
