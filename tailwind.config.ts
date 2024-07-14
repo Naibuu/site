@@ -11,7 +11,7 @@ const config: Config = {
             sans: ['Plus Jakarta Sans', 'sans-serif'],
         },
         extend: {
-            spacing: { page: '800px' },
+            spacing: { page: '750px' },
         },
     },
     plugins: [],

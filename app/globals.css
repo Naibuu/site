@@ -7,7 +7,7 @@
         @apply max-w-page mx-auto px-6 bg-[#0F0F11] text-neutral-200;
     }
 
-    *:focus {
-        @apply outline outline-offset-2 outline-neutral-200;
+    ::selection {
+        @apply bg-neutral-200 text-black;
     }
 }
