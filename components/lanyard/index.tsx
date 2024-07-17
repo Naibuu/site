@@ -17,7 +17,7 @@ export default function Lanyard() {
         <div className="flex items-center justify-between max-xs:flex-col max-xs:items-start max-xs:gap-2">
             <div className="flex items-center gap-3">
                 <img
-                    src="https://avatars.githubusercontent.com/u/81579850?s=48"
+                    src={`https://cdn.discordapp.com/avatars/${data.data.discord_user.id}/${data.data.discord_user.avatar}?size=48`}
                     className="size-12 rounded-lg shadow select-none"
                     draggable={false}
                     alt="Naibuu"

@@ -45,7 +45,7 @@ const Paths: Record<
     },
 }
 
-export function Icon({ size, icon, ...rest }: Props) {
+export default function Icon({ size, icon, ...rest }: Props) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,5 +65,3 @@ export function Icon({ size, icon, ...rest }: Props) {
         </svg>
     )
 }
-
-export default Icon

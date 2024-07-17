@@ -1,16 +1,20 @@
 'use client'
 
 import Link from 'next/link'
-import Lanyard from '~/components/ui/lanyard'
+import Lanyard from '~/components/lanyard'
 import Section from '~/components/ui/section'
 
 export default function Home() {
     return (
-        <div className="flex flex-col gap-8">
+        <main className="flex flex-col gap-8">
             <Lanyard />
 
             {/** Introduction */}
             <Section>
+                <h2 className="text-lg text-neutral-50 font-semibold">
+                    About Me
+                </h2>
+
                 <p>
                     My name is Alex. I'm a self-taught programmer and freelance
                     worker from Greece, specializing in frontend development and
@@ -68,6 +72,6 @@ export default function Home() {
                     be patient and do not troll. Thank you.
                 </p>
             </Section>
-        </div>
+        </main>
     )
 }
