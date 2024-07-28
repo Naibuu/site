@@ -1,14 +1,11 @@
 'use client'
 
 import Link from 'next/link'
-import Lanyard from '~/components/lanyard'
-import Section from '~/components/ui/section'
+import Section from '~/components/section'
 
 export default function Home() {
     return (
         <main className="flex flex-col gap-8">
-            <Lanyard />
-
             {/** Introduction */}
             <Section>
                 <h2 className="text-lg text-neutral-50 font-semibold">

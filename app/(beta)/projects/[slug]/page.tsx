@@ -1,8 +1,9 @@
 'use client'
 
+import Button from '~/components/main/button'
 import { type Slug, getProject } from '~/utils/page'
 
-export default function Project({ params }: Slug) {
+export default function Projects({ params }: Slug) {
     const data = getProject(params.slug)
 
     if (!data) {
