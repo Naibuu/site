@@ -1,11 +1,11 @@
 'use client'
 
-import Section from '~/components/section'
+import TextSection from '~/components/text-section'
 
 export default function Commission() {
     return (
         <main className="flex flex-col gap-8">
-            <Section>
+            <TextSection>
                 <h2 className="text-lg text-neutral-50 font-semibold">
                     💸 Commission
                 </h2>
@@ -16,7 +16,7 @@ export default function Commission() {
                     design. Programming is a huge passion of mine, and I have
                     been hooked for multiple years now.
                 </p>
-            </Section>
+            </TextSection>
         </main>
     )
 }

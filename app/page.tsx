@@ -1,13 +1,13 @@
 'use client'
 
 import Link from 'next/link'
-import Section from '~/components/section'
+import TextSection from '~/components/text-section'
 
 export default function Home() {
     return (
         <main className="flex flex-col gap-8">
             {/** Introduction */}
-            <Section>
+            <TextSection>
                 <h2 className="text-lg text-neutral-50 font-semibold">
                     About Me
                 </h2>
@@ -32,10 +32,10 @@ export default function Home() {
                     everyone. I am experienced with many important web
                     frameworks, such as Vue, React, Svelte, and more.
                 </p>
-            </Section>
+            </TextSection>
 
             {/** Skills */}
-            <Section>
+            <TextSection>
                 <h2 className="text-lg text-neutral-50 font-semibold">
                     Skills
                 </h2>
@@ -51,10 +51,10 @@ export default function Home() {
                     TypeScript, (a bit of) Rust, and Python. I use tools such as
                     Node.js, MongoDB, Supabase, Git, and more.
                 </p>
-            </Section>
+            </TextSection>
 
             {/** Contact */}
-            <Section>
+            <TextSection>
                 <h2 className="text-lg text-neutral-50 font-semibold">
                     Contact
                 </h2>
@@ -68,7 +68,7 @@ export default function Home() {
                     . It might take a bit of time for me to respond, so please
                     be patient and do not troll. Thank you.
                 </p>
-            </Section>
+            </TextSection>
         </main>
     )
 }
