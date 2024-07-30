@@ -15,7 +15,7 @@ const config: Config = {
                 xs: '500px',
             },
             spacing: {
-                page: '720px',
+                page: '760px',
             },
         },
     },

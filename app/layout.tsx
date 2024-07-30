@@ -5,19 +5,18 @@ import './globals.css'
 export * from './metadata'
 
 import SpeedInsights from '~/components/speed-insights'
-import Navbar from '~/components/layout/navbar'
+import Layout from '~/components/layout/layout'
 
 const font = Plus_Jakarta_Sans({
     subsets: ['latin'],
 })
 
-export default function Layout({ children }: PropsWithChildren) {
+export default function RootLayout({ children }: PropsWithChildren) {
     return (
         <html lang="en">
             <body className={font.className}>
                 <SpeedInsights />
-                <Navbar />
-                {children}
+                <Layout>{children}</Layout>
             </body>
         </html>
     )

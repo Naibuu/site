@@ -8,8 +8,18 @@ export type Slug = {
 
 export type Project = {
     slug: string
+    /** Title */
     title: string
+    /** Description */
     excerpt: string
+    /** Content */
+    content: string
+    /** Thumbnail */
+    thumbnail: string
+    /** Collaborator */
+    collaborator: boolean
+    /** Images */
+    images?: string[]
 }
 
 export const getProject = (slug: string): Project | undefined => {

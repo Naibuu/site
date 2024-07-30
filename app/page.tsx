@@ -1,16 +1,16 @@
 'use client'
 
-import Link from 'next/link'
-import TextSection from '~/components/text-section'
+import { Fragment } from 'react'
+import Section from '~/components/main/section'
+import LinkCard from '~/components/main/link-card'
 
 export default function Home() {
     return (
-        <main className="flex flex-col gap-8">
-            {/** Introduction */}
-            <TextSection>
-                <h2 className="text-lg text-neutral-50 font-semibold">
-                    About Me
-                </h2>
+        <Fragment>
+            <Section>
+                <h1 className="text-white text-lg font-medium">
+                    👋 Hey there!
+                </h1>
 
                 <p>
                     My name is Alex. I'm a self-taught programmer and freelance
@@ -32,43 +32,15 @@ export default function Home() {
                     everyone. I am experienced with many important web
                     frameworks, such as Vue, React, Svelte, and more.
                 </p>
-            </TextSection>
+            </Section>
 
-            {/** Skills */}
-            <TextSection>
-                <h2 className="text-lg text-neutral-50 font-semibold">
-                    Skills
-                </h2>
+            <div className="flex flex-1 gap-3">
+                {/** Projects */}
+                <LinkCard icon="stars" text="Projects" href="/projects" />
 
-                <p>
-                    As mentioned above, I am experienced with many important web
-                    frameworks, such as Vue, React, Svelte, and more. Including
-                    meta-frameworks such as Next.js, Nuxt, and Astro.
-                </p>
-
-                <p>
-                    For programming languages, I am experienced with JavaScript,
-                    TypeScript, (a bit of) Rust, and Python. I use tools such as
-                    Node.js, MongoDB, Supabase, Git, and more.
-                </p>
-            </TextSection>
-
-            {/** Contact */}
-            <TextSection>
-                <h2 className="text-lg text-neutral-50 font-semibold">
-                    Contact
-                </h2>
-
-                <p>
-                    Interested in working with me or just want to send a
-                    message? Contact me at{' '}
-                    <Link href="mailto:me@naibuu.dev" className="underline">
-                        me@naibuu.dev
-                    </Link>
-                    . It might take a bit of time for me to respond, so please
-                    be patient and do not troll. Thank you.
-                </p>
-            </TextSection>
-        </main>
+                {/** Support */}
+                <LinkCard icon="support" text="Support & Tip" href="/support" />
+            </div>
+        </Fragment>
     )
 }

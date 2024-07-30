@@ -1,11 +1,13 @@
 'use client'
 
 import { Fragment } from 'react'
-import { toUppercaseFirstLetter } from '~/utils/string'
+import Link from 'next/link'
 
 import { usePathname } from 'next/navigation'
+import { toUppercaseFirstLetter } from '~/utils/string'
+
+import cn from 'classnames'
 import Icon from '../main/icon'
-import Link from 'next/link'
 
 export default function Breadcrumb() {
     const pathname = usePathname()
@@ -13,12 +15,16 @@ export default function Breadcrumb() {
 
     const crumbs = paths.map((path, index) => {
         const href = `/${paths.slice(0, index + 1).join('/')}`
+        const isActive = index === paths.length - 1
 
         return (
             <Fragment key={index}>
                 <Link
                     href={href}
-                    className="px-2 py-1 rounded hover:bg-white/10"
+                    className={cn(
+                        isActive && 'text-white',
+                        'px-2 py-1 rounded hover:bg-white/10',
+                    )}
                 >
                     {toUppercaseFirstLetter(path)}
                 </Link>
@@ -30,12 +36,14 @@ export default function Breadcrumb() {
         )
     })
 
+    if (paths.length === 0) return
+
     return (
         <div className="flex items-center gap-1 font-medium text-sm">
-            <Link href="/" className="px-2 py-1 rounded hover:bg-white/10">
+            <Link href="/" className="px-2 py-2 rounded hover:bg-white/10">
                 <Icon icon="home" size={16} />
             </Link>
-            <Icon icon="chevron" size={12} /> {crumbs.length > 0 && crumbs}
+            <Icon icon="chevron" size={12} /> {crumbs}
         </div>
     )
 }
