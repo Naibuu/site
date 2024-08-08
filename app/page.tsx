@@ -34,11 +34,8 @@ export default function Home() {
                 </p>
             </Section>
 
-            <div className="flex flex-1 gap-3">
-                {/** Projects */}
-                <LinkCard icon="stars" text="Projects" href="/projects" />
-
-                {/** Support */}
+            <div className="flex flex-1 gap-3 max-sm:flex-col">
+                <LinkCard icon="briefcase" text="About Me" href="/about" />
                 <LinkCard icon="support" text="Support & Tip" href="/support" />
             </div>
         </Fragment>

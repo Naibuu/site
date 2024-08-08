@@ -1,14 +1,13 @@
 import type { MetadataRoute } from 'next'
-import { Projects } from '~/data/projects'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const urls = [
+    return [
         {
             url: 'https://naibuu.dev',
             lastModified: new Date(),
         },
         {
-            url: 'https://naibuu.dev/projects',
+            url: 'https://naibuu.dev/about',
             lastModified: new Date(),
         },
         {
@@ -16,13 +15,4 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             lastModified: new Date(),
         },
     ]
-
-    Projects.forEach((item) => {
-        urls.push({
-            url: `https://naibuu.dev/projects/${item.slug}`,
-            lastModified: new Date(),
-        })
-    })
-
-    return urls
 }
